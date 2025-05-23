@@ -12,7 +12,7 @@ export default function Login(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch(`http://localhost:${process.env.REACT_APP_BACKEND_PORT}/api/auth/login`, {
+        const response = await fetch(`https://inotebook1-p6wu.onrender.com:${process.env.REACT_APP_BACKEND_PORT}/api/auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
